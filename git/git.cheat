@@ -1,0 +1,8 @@
+% git
+
+$ branch: git rev-parse --abbrev-ref HEAD
+
+# Rebase current branch against main
+git checkout main && git pull
+git checkout <branch>
+git rebase main
