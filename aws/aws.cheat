@@ -1,0 +1,4 @@
+% aws
+
+# AWS SSO login
+aws sso login --sso-session my-sso
