@@ -1,4 +1,4 @@
-% git
+% git, gh
 
 $ branch: git rev-parse --abbrev-ref HEAD
 
@@ -10,3 +10,4 @@ git rebase main
 
 # Push branch upstream
 git push --set-upstream origin <branch>
+gh pr create --fill
