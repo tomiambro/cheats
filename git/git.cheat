@@ -6,3 +6,7 @@ $ branch: git rev-parse --abbrev-ref HEAD
 git checkout main && git pull
 git checkout <branch>
 git rebase main
+
+
+# Push branch upstream
+git push --set-upstream origin <branch>
