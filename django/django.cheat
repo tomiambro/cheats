@@ -1,0 +1,7 @@
+% django
+
+# Create command structure
+mkdir management && cd management
+touch __init__.py
+mkdir commands && cd commands
+touch __init__.py
