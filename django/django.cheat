@@ -5,3 +5,13 @@ mkdir management && cd management
 touch __init__.py
 mkdir commands && cd commands
 touch __init__.py
+
+
+# Create drf api folder structure
+mkdir api && cd api
+touch __init__.py
+mkdir serializers && cd serializers
+touch __init__.py
+cd ../
+mkdir views && cd views
+touch __init__.py
