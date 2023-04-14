@@ -15,3 +15,7 @@ touch __init__.py
 cd ../
 mkdir views && cd views
 touch __init__.py
+
+# Create super user
+docker-compose -f local.yml run django ./manage.py migrate
+docker-compose -f local.yml run django ./manage.py createsuperuser
