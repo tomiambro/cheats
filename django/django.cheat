@@ -19,3 +19,7 @@ touch __init__.py
 # Create super user
 docker-compose -f local.yml run django ./manage.py migrate
 docker-compose -f local.yml run django ./manage.py createsuperuser
+
+# Reset django db
+docker-compose -f local.yml run django ./manage.py reset_db --no-input
+docker-compose -f local.yml run django ./manage.py createsuperuser
