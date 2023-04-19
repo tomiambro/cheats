@@ -3,5 +3,4 @@ $ project_name
 
 # Run fastapi cookiecutter
 cookiecutter gh:arthurhenrique/cookiecutter-fastapi
-cd <project_name> && git init
-gh repo create --public --source=. --push
+cd <project_name> && git init && gh repo create --public --source=. --push
