@@ -1,0 +1,3 @@
+# Run fastapi cookiecutter
+cookiecutter gh:arthurhenrique/cookiecutter-fastapi
+gh repo create --public --source=. --push
