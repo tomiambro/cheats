@@ -1,0 +1,6 @@
+% docker
+
+# Prune docker and free space
+docker volume prune
+docker builder prune
+docker system prune
