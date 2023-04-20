@@ -2,5 +2,5 @@
 $ project_name
 
 # Run fastapi cookiecutter
-cookiecutter gh:nickatnight/cookiecutter-fastapi-backend
+cookiecutter gh:tomiambro/cookiecutter-fastapi
 cd <project_name> && git init && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
