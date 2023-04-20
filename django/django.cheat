@@ -1,5 +1,7 @@
 % django
 
+$ project_name
+
 # Create command structure
 mkdir management && cd management
 touch __init__.py
@@ -27,6 +29,6 @@ docker-compose -f local.yml run django ./manage.py createsuperuser --username to
 
 # Run django cookiecutter
 cookiecutter gh:tomiambro/cookiecutter-django
+cd <project_name> && git init && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
 docker-compose -f local.yml run django ./manage.py migrate
 docker-compose -f local.yml run django ./manage.py createsuperuser --username tomas --email tomas@example.com
-gh repo create --public --source=. --push
