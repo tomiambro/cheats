@@ -29,6 +29,6 @@ docker-compose -f local.yml run django ./manage.py createsuperuser --username to
 
 # Run django cookiecutter
 cookiecutter gh:tomiambro/cookiecutter-django
-docker-compose -f local.yml run django black . && docker-compose -f local.yml run django isort --atomic .
+cd <project_name> && docker-compose -f local.yml run django black . && docker-compose -f local.yml run django isort --atomic .
 docker-compose -f local.yml run django ./manage.py migrate && docker-compose -f local.yml run django ./manage.py createsuperuser --username tomas --email tomas@example.com
-cd <project_name> && git init && pre-commit install && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
+git init && pre-commit install && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
