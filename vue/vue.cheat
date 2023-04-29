@@ -1,0 +1,7 @@
+% vue
+$ project_folder
+
+# Start/create a new vue project
+npm init vue@latest
+cd <project_folder> && npm install && npm run format
+cat package.json && git init && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
