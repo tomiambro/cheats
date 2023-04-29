@@ -1,6 +1,7 @@
 % django
 
 $ project_name
+$ project_path: /Users/tomiambro/projects/<project_name>
 
 # Create command structure
 mkdir management && cd management
@@ -29,6 +30,6 @@ docker-compose -f local.yml run django ./manage.py createsuperuser --username to
 
 # Run django cookiecutter
 cookiecutter gh:tomiambro/cookiecutter-django
-cd <project_name> && docker-compose -f local.yml run django black . && docker-compose -f local.yml run django isort --atomic .
-docker-compose -f local.yml run django ./manage.py migrate && docker-compose -f local.yml run django ./manage.py createsuperuser --username tomas --email tomas@example.com
-git init && pre-commit install && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
+cd <project_path> && docker-compose -f local.yml run django black . && docker-compose -f local.yml run django isort --atomic .
+cd <project_path> && docker-compose -f local.yml run django ./manage.py migrate && docker-compose -f local.yml run django ./manage.py createsuperuser --username tomas --email tomas@example.com
+cd <project_path> && git init && pre-commit install && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push

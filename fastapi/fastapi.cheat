@@ -1,6 +1,8 @@
 % fastapi
 $ project_name
+$ project_path: /Users/tomiambro/projects/<project_name>
+
 
 # Run fastapi cookiecutter
 cookiecutter gh:tomiambro/cookiecutter-fastapi
-cd <project_name> && git init && pre-commit install && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
+cd <project_path> && git init && pre-commit install && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
