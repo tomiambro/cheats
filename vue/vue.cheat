@@ -1,6 +1,6 @@
 % vue
 $ project_folder
-$ projects_path: /Users/tomiambro/projects
+$ projects_path: pwd
 
 # Start/create a new vue project
 npm init vue@latest
