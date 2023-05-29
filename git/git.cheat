@@ -11,3 +11,6 @@ git rebase main
 # Push branch upstream
 git push --set-upstream origin <branch>
 gh pr create --fill
+
+# Create repo
+git init && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
