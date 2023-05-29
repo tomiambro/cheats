@@ -1,6 +1,6 @@
 % tests
 
-$ container_name: echo "django", echo "fastapi"
+$ container_name: echo "django" | echo "fastapi"
 
 # Run tests with pytest inside the container
 echo "docker-compose run <container_name> pytest"
