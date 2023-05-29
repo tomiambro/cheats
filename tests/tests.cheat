@@ -1,6 +1,7 @@
 % tests
 
 # Run tests with pytest inside the container
+echo "docker-compose -f <compose_file> run <container_name> pytest"
 docker-compose -f <compose_file> run <container_name> pytest
 
 # Run tests with coverage
