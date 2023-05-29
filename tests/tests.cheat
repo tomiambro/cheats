@@ -4,8 +4,8 @@ $ compose_file: "docker-compose.yml"
 
 
 # Run tests with pytest inside the container
-docker-compose -f <compose_file> run pytest
+docker-compose -f $compose_file run pytest
 
 # Run tests with coverage
-docker-compose -f <compose_file> run coverage run --source=app -m pytest -v
-docker-compose -f <compose_file> run coverage report -m
+docker-compose -f $compose_file run coverage run --source=app -m pytest -v
+docker-compose -f $compose_file run coverage report -m
