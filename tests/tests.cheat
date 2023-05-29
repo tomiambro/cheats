@@ -1,10 +1,9 @@
 % tests
 
+# Run tests with pytest inside the container
+docker-compose -f <compose_file> run <container_name> pytest
 $ compose_file: echo "./docker-compose.yml"
 $ container_name: echo "django"
-
-# Run tests with pytest inside the container
-docker-compose -f <compose_file> run "<container_name>" pytest
 
 # Run tests with coverage
 docker-compose -f <compose_file> run <container_name> coverage run --source=app -m pytest -v
