@@ -1,9 +1,11 @@
 % tests
 
+$ container_name: echo "django", echo "fastapi"
+
 # Run tests with pytest inside the container
-echo "docker-compose -f <compose_file> run <container_name> pytest"
-docker-compose -f <compose_file> run <container_name> pytest
+echo "docker-compose run <container_name> pytest"
+docker-compose run <container_name> pytest
 
 # Run tests with coverage
-docker-compose -f <compose_file> run <container_name> coverage run --source=app -m pytest -v
-docker-compose -f <compose_file> run <container_name> coverage report -m
+docker-compose run <container_name> coverage run --source=app -m pytest -v
+docker-compose run <container_name> coverage report -m
