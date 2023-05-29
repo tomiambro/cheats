@@ -7,5 +7,5 @@ echo "docker-compose run <container_name> pytest"
 docker-compose run <container_name> pytest
 
 # Run tests with coverage
-docker-compose run <container_name> coverage run --source=app -m pytest -v
+docker-compose run <container_name> coverage run --source=. -m pytest -v
 docker-compose run <container_name> coverage report -m
