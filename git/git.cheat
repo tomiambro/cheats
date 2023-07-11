@@ -1,6 +1,7 @@
 % git, gh
 
 $ branch: git rev-parse --abbrev-ref HEAD
+$ templates: ls .github/*.md | xargs -n 1 basename
 
 # Rebase current branch against main
 git checkout main && git pull
@@ -11,6 +12,10 @@ git rebase main
 # Push branch upstream
 git push --set-upstream origin <branch>
 gh pr create --fill
+
+# Push branch upstream with template
+git push --set-upstream origin <branch>
+gh pr create --template <templates>
 
 # Create repo
 git init && git add . && git commit -m "initial commit" && gh repo create --public --source=. --push
