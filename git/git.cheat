@@ -2,11 +2,12 @@
 
 $ branch: git rev-parse --abbrev-ref HEAD
 $ templates: ls .github/*.md | xargs -n 1 basename
+$ default: git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
 
 # Rebase current branch against main
-git checkout main && git pull
+git checkout <default> && git pull
 git checkout <branch>
-git rebase main
+git rebase <default>
 
 
 # Push branch upstream
