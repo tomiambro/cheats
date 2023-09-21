@@ -9,6 +9,10 @@ git checkout <default> && git pull
 git checkout <branch>
 git rebase <default>
 
+# Rebase current branch against stage
+git checkout stage && git pull
+git checkout <branch>
+git rebase stage
 
 # Push branch upstream
 git push --set-upstream origin <branch>
