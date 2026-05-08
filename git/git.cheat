@@ -18,6 +18,10 @@ git rebase stage
 git push --set-upstream origin <branch>
 gh pr create --fill
 
+# Push branch upstream as draft
+git push --set-upstream origin <branch>
+gh pr create --fill --draft
+
 # Push branch upstream with template
 git push --set-upstream origin <branch>
 gh pr create --template <templates>
