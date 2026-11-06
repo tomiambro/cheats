@@ -1,0 +1,6 @@
+% terminal, misc
+
+$ filepath
+
+# Copy file to clipboard
+pbcopy < <filepath>
